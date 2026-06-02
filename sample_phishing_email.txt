@@ -1,0 +1,51 @@
+From: security-alert@paypa1.com
+To: nithin@gmail.com
+Subject: URGENT: Your Account Has Been Suspended!
+Date: Thu, 29 May 2026 09:15:00
+Message-ID: <abc123@paypa1.com>
+MIME-Version: 1.0
+Content-Type: text/plain
+
+=== EMAIL HEADERS ===
+Received: from mail.paypa1.com (unknown [185.234.219.55])
+X-Spam-Status: Yes
+X-Originating-IP: 185.234.219.55
+SPF: FAIL
+DKIM: FAIL
+DMARC: FAIL
+X-Mailer: PhishKit v2.1
+
+=== EMAIL BODY ===
+Dear Valued Customer,
+
+We have detected unusual activity in your PayPal account.
+Your account has been temporarily suspended for your protection.
+
+You must verify your account immediately or it will be
+PERMANENTLY DELETED within 24 hours!
+
+Click here to verify: http://paypal-secure-login.xyz/verify
+
+Please provide the following to restore access:
+- Full Name
+- Credit Card Number
+- Account Password
+- Date of Birth
+
+Failure to act immediately will result in permanent
+account termination and legal action.
+
+Regards,
+PayPal Security Departement
+support@paypa1.com
+Tel: +1-800-FAKE-NUM
+
+=== ANALYSIS NOTES ===
+- Sender domain: paypa1.com (1 instead of l) - SPOOFED
+- Suspicious URL: paypal-secure-login.xyz - FAKE DOMAIN
+- Threatening language: PERMANENTLY DELETED - FEAR TACTIC
+- Requests sensitive info: credit card, password - CREDENTIAL HARVEST
+- Spelling error: Departement - GRAMMAR ERROR
+- Generic greeting: Valued Customer - MASS PHISHING
+- SPF/DKIM/DMARC all FAIL - HEADER MISMATCH
+- Originating IP: 185.234.219.55 - SUSPICIOUS LOCATION
